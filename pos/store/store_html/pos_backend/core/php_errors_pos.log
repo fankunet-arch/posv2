@@ -1,0 +1,27 @@
+[20-Nov-2025 18:43:32 Europe/Paris] [PASS_REDEEM] validate_redeem_limits: items_to_redeem=1, remaining_uses=29, max_per_order=1, daily_remaining=unlimited
+[20-Nov-2025 18:43:32 Europe/Paris] [PASS_REDEEM] Limits validation passed
+[20-Nov-2025 18:43:32 Europe/Paris] [PASS_REDEEM] Checking idempotency for key: 4b6572c6-a712-4b8e-b6c3-c2d082ff10ea, pass_id: 1
+[20-Nov-2025 18:43:32 Europe/Paris] [PASS_REDEEM] Starting redeem transaction for member_id=1, pass_id=1, idempotency_key=4b6572c6-a712-4b8e-b6c3-c2d082ff10ea
+[20-Nov-2025 18:43:32 Europe/Paris] [PASS_REDEEM] Created batch_id=2 with idempotency_key=4b6572c6-a712-4b8e-b6c3-c2d082ff10ea
+[20-Nov-2025 18:43:32 Europe/Paris] [PASS_REDEEM] Transaction completed successfully: batch_id=2, redeemed_uses=1, extra_charge=0, invoice_tp=null, invoice_vr=A1-VRY25-5
+[21-Nov-2025 16:00:48 Europe/Paris] [PASS_REDEEM] validate_redeem_limits: items_to_redeem=1, remaining_uses=28, max_per_order=1, daily_remaining=unlimited
+[21-Nov-2025 16:00:48 Europe/Paris] [PASS_REDEEM] Limits validation passed
+[21-Nov-2025 16:00:48 Europe/Paris] [PASS_REDEEM] Checking idempotency for key: 76ed025e-dae8-4f02-a35c-c7c38d258cfb, pass_id: 1
+[21-Nov-2025 16:00:48 Europe/Paris] [PASS_REDEEM] Starting redeem transaction for member_id=1, pass_id=1, idempotency_key=76ed025e-dae8-4f02-a35c-c7c38d258cfb
+[21-Nov-2025 16:00:48 Europe/Paris] [PASS_REDEEM] Created batch_id=3 with idempotency_key=76ed025e-dae8-4f02-a35c-c7c38d258cfb
+[21-Nov-2025 16:00:48 Europe/Paris] [PASS_REDEEM] Transaction completed successfully: batch_id=3, redeemed_uses=1, extra_charge=0, invoice_tp=null, invoice_vr=A1-VRY25-6
+[21-Nov-2025 16:03:00 Europe/Paris] [PASS_PURCHASE] Stacked purchase for member_id=1, plan_id=1: total_uses 30 -> 40, remaining_uses 27 -> 37
+[22-Nov-2025 03:43:47 Europe/Paris] [MEMBER_CREATE_ERROR] PDOException caught
+[22-Nov-2025 03:43:47 Europe/Paris] [MEMBER_CREATE_ERROR] SQLSTATE: 23000
+[22-Nov-2025 03:43:47 Europe/Paris] [MEMBER_CREATE_ERROR] Error Code: 1452
+[22-Nov-2025 03:43:47 Europe/Paris] [MEMBER_CREATE_ERROR] Message: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`mhdlmskv3gjbpqv3`.`pos_members`, CONSTRAINT `fk_member_level` FOREIGN KEY (`member_level_id`) REFERENCES `pos_member_levels` (`id`) ON DELETE SET NULL)
+[22-Nov-2025 03:43:47 Europe/Paris] [MEMBER_CREATE_ERROR] Phone: 12345
+[22-Nov-2025 03:43:47 Europe/Paris] [MEMBER_CREATE_ERROR] Birthdate: NULL
+[22-Nov-2025 03:43:47 Europe/Paris] [MEMBER_CREATE_ERROR] Foreign key constraint violation - member_level_id may be invalid
+[22-Nov-2025 03:45:12 Europe/Paris] [MEMBER_CREATE_ERROR] PDOException caught
+[22-Nov-2025 03:45:12 Europe/Paris] [MEMBER_CREATE_ERROR] SQLSTATE: 23000
+[22-Nov-2025 03:45:12 Europe/Paris] [MEMBER_CREATE_ERROR] Error Code: 1452
+[22-Nov-2025 03:45:12 Europe/Paris] [MEMBER_CREATE_ERROR] Message: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`mhdlmskv3gjbpqv3`.`pos_members`, CONSTRAINT `fk_member_level` FOREIGN KEY (`member_level_id`) REFERENCES `pos_member_levels` (`id`) ON DELETE SET NULL)
+[22-Nov-2025 03:45:12 Europe/Paris] [MEMBER_CREATE_ERROR] Phone: 12345
+[22-Nov-2025 03:45:12 Europe/Paris] [MEMBER_CREATE_ERROR] Birthdate: NULL
+[22-Nov-2025 03:45:12 Europe/Paris] [MEMBER_CREATE_ERROR] Foreign key constraint violation - member_level_id may be invalid
